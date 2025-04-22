@@ -1,4 +1,4 @@
-site_name: 樱花AI博客
+site_name: Fueny
 theme:
   name: material
   palette:
@@ -18,26 +18,23 @@ theme:
     text: Noto Sans SC
     code: Roboto Mono
   icon:
-    logo: material/cherry
+    logo: material/flower
     repo: fontawesome/brands/github
 
 # 自定义CSS
 extra_css:
   - stylesheets/extra.css
 
-# 页面图标
-icons:
-  - fontawesome
 
 # 网站信息
-site_description: 一个关于人工智能的樱花风格博客
+site_description: Fueny博客站点
 site_author: Fueny
 
 # 导航结构
 nav:
   - 首页: index.md
   - 关于: about.md
-  - AI博客:
+  - 博客:
     - posts/ai_history.md
     - posts/machine_learning.md
     - posts/deep_learning.md

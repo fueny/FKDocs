@@ -1,3 +1,7 @@
+---
+encoding: utf-8
+---
+
 # 欢迎来到樱花AI博客
 
 <div class="hero">

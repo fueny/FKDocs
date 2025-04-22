@@ -1,0 +1,1585 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Fueny的个人博客站点">
+      
+      
+        <meta name="author" content="Fueny">
+      
+      
+      
+        <link rel="prev" href="../blog4/">
+      
+      
+        <link rel="next" href="../ai_history/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>项目分享 - Fueny</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans SC";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#pythonflask" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Fueny" class="md-header__button md-logo" aria-label="Fueny" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 13a9 9 0 0 0 9 9c0-5-4.03-9-9-9m9-7.5A2.5 2.5 0 0 1 14.5 8a2.5 2.5 0 0 1-2.5 2.5A2.5 2.5 0 0 1 9.5 8 2.5 2.5 0 0 1 12 5.5m-6.4 4.75a2.5 2.5 0 0 0 2.5 2.5c.53 0 1.02-.17 1.4-.44v.19A2.5 2.5 0 0 0 12 15a2.5 2.5 0 0 0 2.5-2.5v-.19c.38.27.87.44 1.4.44a2.5 2.5 0 0 0 2.5-2.5c0-1-.59-1.85-1.43-2.25.84-.4 1.43-1.26 1.43-2.25a2.5 2.5 0 0 0-2.5-2.5c-.53 0-1.02.16-1.4.44V3.5A2.5 2.5 0 0 0 12 1a2.5 2.5 0 0 0-2.5 2.5v.19c-.38-.28-.87-.44-1.4-.44a2.5 2.5 0 0 0-2.5 2.5c0 .99.59 1.85 1.43 2.25-.84.4-1.43 1.25-1.43 2.25M12 22a9 9 0 0 0 9-9c-5 0-9 4-9 9"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Fueny
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              项目分享
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  首页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  关于
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../catalogs/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  博客目录
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../blog1/" class="md-tabs__link">
+          
+  
+  
+  生活博客
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../ai_history/" class="md-tabs__link">
+          
+  
+  
+  AI博客
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Fueny" class="md-nav__button md-logo" aria-label="Fueny" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 13a9 9 0 0 0 9 9c0-5-4.03-9-9-9m9-7.5A2.5 2.5 0 0 1 14.5 8a2.5 2.5 0 0 1-2.5 2.5A2.5 2.5 0 0 1 9.5 8 2.5 2.5 0 0 1 12 5.5m-6.4 4.75a2.5 2.5 0 0 0 2.5 2.5c.53 0 1.02-.17 1.4-.44v.19A2.5 2.5 0 0 0 12 15a2.5 2.5 0 0 0 2.5-2.5v-.19c.38.27.87.44 1.4.44a2.5 2.5 0 0 0 2.5-2.5c0-1-.59-1.85-1.43-2.25.84-.4 1.43-1.26 1.43-2.25a2.5 2.5 0 0 0-2.5-2.5c-.53 0-1.02.16-1.4.44V3.5A2.5 2.5 0 0 0 12 1a2.5 2.5 0 0 0-2.5 2.5v.19c-.38-.28-.87-.44-1.4-.44a2.5 2.5 0 0 0-2.5 2.5c0 .99.59 1.85 1.43 2.25-.84.4-1.43 1.25-1.43 2.25M12 22a9 9 0 0 0 9-9c-5 0-9 4-9 9"/></svg>
+
+    </a>
+    Fueny
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    关于
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../catalogs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    博客目录
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    生活博客
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            生活博客
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../blog1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    技术分享
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../blog2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    生活感悟
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../blog3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    读书笔记
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../blog4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    旅行记录
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    项目分享
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    项目分享
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      项目背景
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      技术栈
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      项目结构
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      核心功能实现
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="核心功能实现">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 文章管理系统
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 用户认证系统
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-markdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Markdown支持
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 搜索功能
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 响应式设计
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      部署方案
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      开发过程中的挑战与解决方案
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="开发过程中的挑战与解决方案">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      挑战1：图片上传与管理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      挑战2：性能优化
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3seo" class="md-nav__link">
+    <span class="md-ellipsis">
+      挑战3：SEO优化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      未来计划
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      经验总结
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      结语
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    AI博客
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            AI博客
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai_history/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AI发展简史
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../machine_learning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    机器学习基础
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deep_learning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    深度学习入门
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nlp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    自然语言处理技术
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai_ethics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AI伦理与未来
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      项目背景
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      技术栈
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      项目结构
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      核心功能实现
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="核心功能实现">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 文章管理系统
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 用户认证系统
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-markdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Markdown支持
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 搜索功能
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 响应式设计
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      部署方案
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      开发过程中的挑战与解决方案
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="开发过程中的挑战与解决方案">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      挑战1：图片上传与管理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      挑战2：性能优化
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3seo" class="md-nav__link">
+    <span class="md-ellipsis">
+      挑战3：SEO优化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      未来计划
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      经验总结
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      结语
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="pythonflask">项目分享：如何用Python和Flask构建个人博客系统</h1>
+<p>作为一名开发者，拥有一个个人博客不仅可以分享知识，还能记录自己的成长历程。在这篇文章中，我将分享我最近完成的一个项目——使用Python和Flask框架构建的个人博客系统，并详细介绍开发过程中的经验和技巧。</p>
+<h2 id="_1">项目背景</h2>
+<p>在决定创建自己的博客系统之前，我尝试过WordPress、Ghost等成熟的博客平台。虽然这些平台功能强大，但我发现它们要么过于复杂，要么不够灵活。作为一名Python爱好者，我决定从零开始构建一个符合自己需求的博客系统。</p>
+<p>选择Flask作为框架是因为它轻量级、灵活，非常适合个人项目。同时，这也是一个提升自己Web开发技能的好机会。</p>
+<h2 id="_2">技术栈</h2>
+<ul>
+<li><strong>后端</strong>：Python 3.9 + Flask 2.0</li>
+<li><strong>数据库</strong>：SQLite（开发环境）/ PostgreSQL（生产环境）</li>
+<li><strong>ORM</strong>：SQLAlchemy</li>
+<li><strong>前端</strong>：HTML5 + CSS3 + JavaScript</li>
+<li><strong>CSS框架</strong>：Bulma</li>
+<li><strong>编辑器</strong>：TinyMCE</li>
+<li><strong>部署</strong>：Docker + Nginx + Gunicorn</li>
+<li><strong>版本控制</strong>：Git</li>
+</ul>
+<h2 id="_3">项目结构</h2>
+<pre><code>blog/
+├── app/
+│   ├── __init__.py
+│   ├── models.py
+│   ├── routes.py
+│   ├── forms.py
+│   ├── utils.py
+│   └── templates/
+│       ├── base.html
+│       ├── index.html
+│       ├── post.html
+│       └── ...
+├── migrations/
+├── static/
+│   ├── css/
+│   ├── js/
+│   └── images/
+├── config.py
+├── requirements.txt
+├── Dockerfile
+└── docker-compose.yml
+</code></pre>
+<h2 id="_4">核心功能实现</h2>
+<h3 id="1">1. 文章管理系统</h3>
+<p>博客的核心自然是文章管理。我设计了一个简洁的Post模型：</p>
+<pre><code class="language-python">class Post(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(100), nullable=False)
+    slug = db.Column(db.String(100), unique=True, nullable=False)
+    content = db.Column(db.Text, nullable=False)
+    summary = db.Column(db.String(200))
+    published = db.Column(db.Boolean, default=False)
+    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    updated_at = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+    author_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
+    category_id = db.Column(db.Integer, db.ForeignKey('category.id'))
+    tags = db.relationship('Tag', secondary=post_tags, backref=db.backref('posts', lazy='dynamic'))
+
+    def __repr__(self):
+        return f'&lt;Post {self.title}&gt;'
+
+    @property
+    def reading_time(self):
+        &quot;&quot;&quot;Calculate estimated reading time in minutes.&quot;&quot;&quot;
+        words_per_minute = 200
+        word_count = len(self.content.split())
+        return max(1, round(word_count / words_per_minute))
+</code></pre>
+<p>除了基本的标题、内容、创建时间等字段外，我还添加了一些实用功能：</p>
+<ul>
+<li><strong>slug</strong>：用于生成友好的URL</li>
+<li><strong>summary</strong>：文章摘要，用于首页展示</li>
+<li><strong>reading_time</strong>：估计阅读时间，提升用户体验</li>
+<li><strong>tags和category</strong>：用于文章分类和归档</li>
+</ul>
+<h3 id="2">2. 用户认证系统</h3>
+<p>为了保护博客的管理功能，我实现了一个简单但安全的用户认证系统：</p>
+<pre><code class="language-python">from werkzeug.security import generate_password_hash, check_password_hash
+from flask_login import UserMixin
+
+class User(UserMixin, db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(64), unique=True, nullable=False)
+    email = db.Column(db.String(120), unique=True, nullable=False)
+    password_hash = db.Column(db.String(128))
+    is_admin = db.Column(db.Boolean, default=False)
+    posts = db.relationship('Post', backref='author', lazy='dynamic')
+
+    def set_password(self, password):
+        self.password_hash = generate_password_hash(password)
+
+    def check_password(self, password):
+        return check_password_hash(self.password_hash, password)
+</code></pre>
+<p>使用Flask-Login插件管理用户会话，确保只有管理员可以发布和编辑文章。密码使用哈希存储，提高安全性。</p>
+<h3 id="3-markdown">3. Markdown支持</h3>
+<p>作为一个技术博客，Markdown支持是必不可少的。我使用Markdown库将Markdown文本转换为HTML：</p>
+<pre><code class="language-python">import markdown
+from flask import Markup
+
+def convert_markdown(text):
+    &quot;&quot;&quot;Convert markdown to HTML and sanitize it.&quot;&quot;&quot;
+    html = markdown.markdown(
+        text,
+        extensions=[
+            'markdown.extensions.fenced_code',
+            'markdown.extensions.codehilite',
+            'markdown.extensions.tables',
+            'markdown.extensions.toc'
+        ]
+    )
+    return Markup(html)
+</code></pre>
+<p>在模板中，可以这样使用：</p>
+<pre><code class="language-html">&lt;div class=&quot;content&quot;&gt;
+    {{ post.content|markdown }}
+&lt;/div&gt;
+</code></pre>
+<h3 id="4">4. 搜索功能</h3>
+<p>为了方便用户查找内容，我实现了一个简单的全文搜索功能。在开发环境中使用SQLite的LIKE查询，在生产环境中使用PostgreSQL的全文搜索功能：</p>
+<pre><code class="language-python">def search_posts(query):
+    &quot;&quot;&quot;Search posts by title, content or tags.&quot;&quot;&quot;
+    if current_app.config['SQLALCHEMY_DATABASE_URI'].startswith('postgresql'):
+        # PostgreSQL full-text search
+        search_query = f&quot;%{query}%&quot;
+        return Post.query.filter(
+            db.or_(
+                Post.title.ilike(search_query),
+                Post.content.ilike(search_query),
+                Post.tags.any(Tag.name.ilike(search_query))
+            )
+        ).filter_by(published=True).order_by(Post.created_at.desc())
+    else:
+        # SQLite fallback
+        search_query = f&quot;%{query}%&quot;
+        return Post.query.filter(
+            db.or_(
+                Post.title.like(search_query),
+                Post.content.like(search_query),
+                Post.tags.any(Tag.name.like(search_query))
+            )
+        ).filter_by(published=True).order_by(Post.created_at.desc())
+</code></pre>
+<h3 id="5">5. 响应式设计</h3>
+<p>为了确保博客在各种设备上都有良好的显示效果，我使用Bulma CSS框架实现了响应式设计。Bulma是一个基于Flexbox的现代CSS框架，使用简单，效果出色。</p>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;title&gt;{% block title %}My Blog{% endblock %}&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;{{ url_for('static', filename='css/style.css') }}&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;nav class=&quot;navbar is-primary&quot; role=&quot;navigation&quot; aria-label=&quot;main navigation&quot;&gt;
+        &lt;!-- Navbar content --&gt;
+    &lt;/nav&gt;
+
+    &lt;section class=&quot;section&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            {% block content %}{% endblock %}
+        &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;footer class=&quot;footer&quot;&gt;
+        &lt;!-- Footer content --&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h2 id="_5">部署方案</h2>
+<p>为了简化部署过程并确保环境一致性，我使用Docker容器化整个应用：</p>
+<pre><code class="language-dockerfile">FROM python:3.9-slim
+
+WORKDIR /app
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+ENV FLASK_APP=blog.py
+ENV FLASK_ENV=production
+
+EXPOSE 5000
+
+CMD [&quot;gunicorn&quot;, &quot;--bind&quot;, &quot;0.0.0.0:5000&quot;, &quot;blog:app&quot;]
+</code></pre>
+<p>使用docker-compose编排多个服务：</p>
+<pre><code class="language-yaml">version: '3'
+
+services:
+  web:
+    build: .
+    restart: always
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=postgresql://postgres:password@db:5432/blog
+    volumes:
+      - ./app:/app/app
+    networks:
+      - blog-network
+
+  db:
+    image: postgres:13
+    restart: always
+    environment:
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=blog
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - blog-network
+
+  nginx:
+    image: nginx:latest
+    restart: always
+    ports:
+      - &quot;80:80&quot;
+      - &quot;443:443&quot;
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./nginx/ssl:/etc/nginx/ssl
+      - ./static:/app/static
+    depends_on:
+      - web
+    networks:
+      - blog-network
+
+networks:
+  blog-network:
+
+volumes:
+  postgres_data:
+</code></pre>
+<p>最后，使用Nginx作为反向代理，处理静态文件并配置SSL：</p>
+<pre><code class="language-nginx">server {
+    listen 80;
+    server_name yourblog.com;
+    return 301 https://$host$request_uri;
+}
+
+server {
+    listen 443 ssl;
+    server_name yourblog.com;
+
+    ssl_certificate /etc/nginx/ssl/cert.pem;
+    ssl_certificate_key /etc/nginx/ssl/key.pem;
+
+    location /static {
+        alias /app/static;
+        expires 30d;
+    }
+
+    location / {
+        proxy_pass http://web:5000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+}
+</code></pre>
+<h2 id="_6">开发过程中的挑战与解决方案</h2>
+<h3 id="1_1">挑战1：图片上传与管理</h3>
+<p>最初，我计划将图片存储在本地文件系统中，但这会导致部署和扩展问题。最终，我决定使用AWS S3作为图片存储解决方案：</p>
+<pre><code class="language-python">import boto3
+from botocore.exceptions import ClientError
+from flask import current_app
+
+def upload_image(file_data, filename):
+    &quot;&quot;&quot;Upload image to S3 bucket and return the URL.&quot;&quot;&quot;
+    s3_client = boto3.client(
+        's3',
+        aws_access_key_id=current_app.config['AWS_ACCESS_KEY'],
+        aws_secret_access_key=current_app.config['AWS_SECRET_KEY']
+    )
+
+    try:
+        s3_client.upload_fileobj(
+            file_data,
+            current_app.config['S3_BUCKET'],
+            f&quot;images/{filename}&quot;,
+            ExtraArgs={'ContentType': file_data.content_type}
+        )
+
+        return f&quot;https://{current_app.config['S3_BUCKET']}.s3.amazonaws.com/images/{filename}&quot;
+    except ClientError as e:
+        current_app.logger.error(f&quot;S3 upload error: {e}&quot;)
+        return None
+</code></pre>
+<h3 id="2_1">挑战2：性能优化</h3>
+<p>随着博客文章数量的增加，页面加载速度变慢。我采取了以下措施进行优化：</p>
+<ol>
+<li>
+<p><strong>数据库索引</strong>：为常用查询字段添加索引
+   <code>python
+   # 在Post模型中添加索引
+   __table_args__ = (
+       db.Index('idx_post_title', 'title'),
+       db.Index('idx_post_created_at', 'created_at'),
+   )</code></p>
+</li>
+<li>
+<p><strong>缓存</strong>：使用Flask-Caching缓存常用页面和查询结果
+   ```python
+   from flask_caching import Cache</p>
+</li>
+</ol>
+<p>cache = Cache()</p>
+<p># 在应用初始化时配置缓存
+   cache.init_app(app, config={'CACHE_TYPE': 'simple'})</p>
+<p>@app.route('/')
+   @cache.cached(timeout=300)  # 缓存5分钟
+   def index():
+       posts = Post.query.filter_by(published=True).order_by(Post.created_at.desc()).limit(10).all()
+       return render_template('index.html', posts=posts)
+   ```</p>
+<ol>
+<li><strong>延迟加载</strong>：对于不是立即需要的内容（如评论）使用AJAX延迟加载</li>
+</ol>
+<h3 id="3seo">挑战3：SEO优化</h3>
+<p>为了提高博客在搜索引擎中的排名，我实施了以下SEO优化措施：</p>
+<ol>
+<li>
+<p><strong>元标签优化</strong>：为每个页面添加合适的标题、描述和关键词
+   <code>html
+   &lt;head&gt;
+       &lt;title&gt;{{ post.title }} | My Blog&lt;/title&gt;
+       &lt;meta name="description" content="{{ post.summary }}"&gt;
+       &lt;meta name="keywords" content="{{ post.tags|join(', ') }}"&gt;
+   &lt;/head&gt;</code></p>
+</li>
+<li>
+<p><strong>Sitemap生成</strong>：自动生成站点地图提交给搜索引擎
+   ```python
+   @app.route('/sitemap.xml')
+   def sitemap():
+       """Generate sitemap.xml for SEO."""
+       pages = []
+       ten_days_ago = datetime.now() - timedelta(days=10)</p>
+<p># 添加静态页面
+   for rule in app.url_map.iter_rules():
+       if "GET" in rule.methods and not rule.arguments and not rule.endpoint.startswith('admin'):
+           url = url_for(rule.endpoint, _external=True)
+           pages.append([url, ten_days_ago.strftime('%Y-%m-%d')])</p>
+<p># 添加博客文章
+   posts = Post.query.filter_by(published=True).all()
+   for post in posts:
+       url = url_for('post', slug=post.slug, _external=True)
+       modified_time = post.updated_at.strftime('%Y-%m-%d')
+       pages.append([url, modified_time])</p>
+<p>sitemap_xml = render_template('sitemap.xml', pages=pages)
+   response = make_response(sitemap_xml)
+   response.headers["Content-Type"] = "application/xml"</p>
+<p>return response
+   ```</p>
+</li>
+<li>
+<p><strong>友好URL</strong>：使用有意义的slug而不是ID作为URL
+   ```python
+   def generate_slug(title):
+       """Generate a URL-friendly slug from the title."""
+       return slugify(title)</p>
+</li>
+</ol>
+<p>@app.route('/post/<slug>')
+   def post(slug):
+       post = Post.query.filter_by(slug=slug, published=True).first_or_404()
+       return render_template('post.html', post=post)
+   ```</p>
+<h2 id="_7">未来计划</h2>
+<p>虽然当前版本的博客系统已经满足了我的基本需求，但我计划在未来添加更多功能：</p>
+<ol>
+<li><strong>评论系统</strong>：添加评论功能，允许读者互动</li>
+<li><strong>邮件订阅</strong>：让读者可以订阅新文章通知</li>
+<li><strong>多语言支持</strong>：添加中英文切换功能</li>
+<li><strong>数据分析</strong>：集成Google Analytics，分析访问数据</li>
+<li><strong>PWA支持</strong>：将博客转变为渐进式Web应用，提供离线访问能力</li>
+</ol>
+<h2 id="_8">经验总结</h2>
+<p>通过这个项目，我不仅提升了自己的技术能力，还学到了很多关于产品设计和用户体验的知识。以下是一些关键经验：</p>
+<ol>
+<li><strong>从简单开始</strong>：先实现核心功能，然后逐步迭代添加新特性</li>
+<li><strong>用户体验优先</strong>：始终从用户角度思考，保持界面简洁直观</li>
+<li><strong>测试的重要性</strong>：编写单元测试和集成测试，确保功能正常</li>
+<li><strong>文档驱动开发</strong>：先写文档再写代码，有助于理清思路</li>
+<li><strong>持续集成/持续部署</strong>：使用GitHub Actions自动化测试和部署流程</li>
+</ol>
+<h2 id="_9">结语</h2>
+<p>构建个人博客系统是一次非常有价值的经历。它不仅满足了我分享知识的需求，还成为了展示我技术能力的平台。最重要的是，这个项目可以持续迭代和改进，随着我技术能力的提升而不断进化。</p>
+<p>如果你也有兴趣构建自己的博客系统，我强烈建议你尝试一下。即使你最终选择使用现成的平台，这个过程中学到的知识和经验也会对你的技术成长大有裨益。</p>
+<p>项目源码已经开源在我的GitHub仓库：<a href="https://github.com/fueny/flask-blog">https://github.com/fueny/flask-blog</a>，欢迎Star和Fork！</p>
+<p>如果你有任何问题或建议，欢迎在评论区留言或直接联系我。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.sections", "navigation.expand", "search.highlight", "search.suggest", "content.tabs.link", "content.code.copy"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,17 +1,4 @@
----
-encoding: utf-8
----
-
-# 欢迎来到Fueny的博客
-
-<div class="hero">
-  <div class="hero-content">
-    <h1>记录我的成长足迹</h1>
-    <p>在这里，我将记录我的生活和工作经历，分享我的思考和感悟，希望能与大家一起成长。</p>
-  </div>
-</div>
-
-## 博客内容
+# 博客内容
 
 <div class="card-grid">
   <div class="card">
@@ -70,29 +57,4 @@ encoding: utf-8
     <a href="/posts/machine_learning/" class="card-link">阅读更多 →</a>
   </div>
 
-</div>
-
-## 关于本站
-
-本博客使用MkDocs构建，采用简洁美观的主题风格，致力于分享我的个人经验和思考。
-
-<div class="features">
-  <div class="feature">
-    <h3>📝 原创内容</h3>
-    <p>所有文章均为原创，分享真实的经验和感悟</p>
-  </div>
-
-  <div class="feature">
-    <h3>📚 深入浅出</h3>
-    <p>用简单易懂的语言分享复杂的概念和想法</p>
-  </div>
-
-  <div class="feature">
-    <h3>📸 图文并茶</h3>
-    <p>配以精美的图片和清晰的排版，提升阅读体验</p>
-  </div>
-</div>
-
-<div class="cta">
-  <p>开始浏览我的博客吧！</p>
 </div>

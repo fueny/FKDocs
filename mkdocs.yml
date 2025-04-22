@@ -2,7 +2,7 @@ site_name: Fueny
 theme:
   name: material
   palette:
-    # 樱花主题配色
+    # 主题配色
     primary: pink
     accent: deep purple
   features:
@@ -27,16 +27,23 @@ extra_css:
 
 
 # 网站信息
-site_description: Fueny博客站点
+site_description: Fueny的个人博客站点
 site_author: Fueny
 
 # 导航结构
 nav:
   - 首页: index.md
   - 关于: about.md
-  - 博客:
-    - posts/ai_history.md
-    - posts/machine_learning.md
-    - posts/deep_learning.md
-    - posts/nlp.md
-    - posts/ai_ethics.md
+  - 博客目录: catalogs.md
+  - 生活博客:
+    - 技术分享: posts/blog1.md
+    - 生活感悟: posts/blog2.md
+    - 读书笔记: posts/blog3.md
+    - 旅行记录: posts/blog4.md
+    - 项目分享: posts/blog5.md
+  - AI博客:
+    - AI发展简史: posts/ai_history.md
+    - 机器学习基础: posts/machine_learning.md
+    - 深度学习入门: posts/deep_learning.md
+    - 自然语言处理技术: posts/nlp.md
+    - AI伦理与未来: posts/ai_ethics.md

@@ -1,15 +1,45 @@
-site_name: Fueny
+site_name: 樱花AI博客
 theme:
   name: material
   palette:
-    primary: indigo
-    accent: pink
+    # 樱花主题配色
+    primary: pink
+    accent: deep purple
   features:
     - navigation.tabs
     - navigation.top
+    - navigation.sections
+    - navigation.expand
     - search.highlight
     - search.suggest
+    - content.tabs.link
+    - content.code.copy
+  font:
+    text: Noto Sans SC
+    code: Roboto Mono
+  icon:
+    logo: material/cherry
+    repo: fontawesome/brands/github
+
+# 自定义CSS
+extra_css:
+  - stylesheets/extra.css
+
+# 页面图标
+icons:
+  - fontawesome
+
+# 网站信息
+site_description: 一个关于人工智能的樱花风格博客
+site_author: Fueny
+
+# 导航结构
 nav:
   - 首页: index.md
   - 关于: about.md
-  - 第一张页面: posts/firstpage.md
+  - AI博客:
+    - posts/ai_history.md
+    - posts/machine_learning.md
+    - posts/deep_learning.md
+    - posts/nlp.md
+    - posts/ai_ethics.md

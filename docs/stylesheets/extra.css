@@ -1,0 +1,114 @@
+/* 樱花主题自定义样式 */
+
+/* 全局字体和颜色 */
+:root {
+  --md-primary-fg-color: #f8bbd0;
+  --md-primary-fg-color--light: #ffeeff;
+  --md-primary-fg-color--dark: #c48b9f;
+  --md-accent-fg-color: #9c27b0;
+}
+
+/* 页面背景 */
+body {
+  background-color: #fff9fc;
+}
+
+/* 导航栏样式 */
+.md-header {
+  box-shadow: 0 0 0.2rem rgba(0,0,0,.1), 0 0.2rem 0.4rem rgba(0,0,0,.2);
+}
+
+/* 樱花装饰 */
+.md-main::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><path fill="%23f8bbd0" opacity="0.1" d="M 0,50 A 50,50 0 0,0 50,0 L 100,0 L 100,100 L 0,100 L 0,50 Z M 100,100 L 100,0 L 150,0 A 50,50 0 0,1 200,50 L 200,100 L 100,100 Z M 100,100 L 200,100 L 200,150 A 50,50 0 0,1 150,200 L 100,200 L 100,100 Z M 0,100 L 100,100 L 100,200 L 50,200 A 50,50 0 0,1 0,150 L 0,100 Z"/></svg>');
+  background-size: 30px;
+  opacity: 0.3;
+}
+
+/* 卡片样式 */
+.md-typeset .card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 3px solid var(--md-primary-fg-color);
+}
+
+.md-typeset .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.md-typeset .card h2 {
+  margin-top: 0;
+  color: var(--md-primary-fg-color--dark);
+}
+
+.md-typeset .card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* 标题样式 */
+.md-typeset h1 {
+  color: var(--md-primary-fg-color--dark);
+  font-weight: bold;
+}
+
+.md-typeset h2 {
+  color: var(--md-primary-fg-color--dark);
+  border-bottom: 2px solid var(--md-primary-fg-color--light);
+  padding-bottom: 0.2em;
+}
+
+/* 链接样式 */
+.md-typeset a {
+  color: var(--md-accent-fg-color);
+}
+
+.md-typeset a:hover {
+  color: var(--md-primary-fg-color--dark);
+  text-decoration: underline;
+}
+
+/* 代码块样式 */
+.md-typeset pre {
+  background-color: #f8f9fa;
+  border-left: 4px solid var(--md-primary-fg-color);
+}
+
+/* 引用块样式 */
+.md-typeset blockquote {
+  border-left: 4px solid var(--md-primary-fg-color);
+  background-color: #fff5f8;
+}
+
+/* 表格样式 */
+.md-typeset table:not([class]) {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  border-radius: 0.2rem;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--md-primary-fg-color--light);
+  color: var(--md-primary-fg-color--dark);
+}
+
+/* 页脚样式 */
+.md-footer {
+  background-color: var(--md-primary-fg-color);
+}
+
+.md-footer-meta {
+  background-color: var(--md-primary-fg-color--dark);
+}

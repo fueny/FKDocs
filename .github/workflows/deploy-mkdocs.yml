@@ -13,9 +13,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: 检出代码
+        uses: actions/checkout@v3
         with:
-          fetch-depth: 0  # 获取完整的历史记录，这样 mkdocs 可以获取最后修改日期
+          fetch-depth: 0  # 获取完整的历史记录
 
       - name: 设置 Python
         uses: actions/setup-python@v4
@@ -28,10 +29,12 @@ jobs:
           pip install mkdocs-material
           # 如果您有其他依赖，请在这里添加
 
-      - name: 配置 Git
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+      - name: 构建文档
+        run: mkdocs build
 
-      - name: 部署文档
-        run: mkdocs gh-deploy --force
+      - name: 部署到 GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: site  # MkDocs 生成的站点文件夹
+          branch: gh-pages  # 部署到的分支
+          clean: true  # 清除旧文件

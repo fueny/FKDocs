@@ -1,0 +1,15 @@
+site_name: Fueny
+theme:
+  name: material
+  palette:
+    primary: indigo
+    accent: pink
+  features:
+    - navigation.tabs
+    - navigation.top
+    - search.highlight
+    - search.suggest
+nav:
+  - 首页: index.md
+  - 关于: about.md
+  - 第一张页面: posts/firstpage.md

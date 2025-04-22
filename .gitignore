@@ -1,0 +1,41 @@
+# MkDocs 构建输出
+/site/
+
+# Python 虚拟环境
+/.venv/
+/venv/
+/env/
+/.env/
+
+# Python 缓存文件
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# IDE 配置文件
+/.idea/
+/.vscode/
+*.swp
+*.swo
+*~
+
+# 操作系统生成的文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 日志文件
+*.log
+
+# 临时文件
+*.tmp
+*.bak
+*.swp
+*~.nib
